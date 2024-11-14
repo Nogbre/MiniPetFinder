@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raza"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinner_breed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamaño"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinner_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la mascota (opcional)"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de teléfono de referencia"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/save_pet_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicar Mascota Perdida"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>
